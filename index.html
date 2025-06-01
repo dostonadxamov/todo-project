@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <title>TODO</title>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/output.css">
 
     <style>
@@ -74,17 +74,20 @@
 <body>
     <!-- navbar -->
     <div id="nav" class=" mb-10  h-[200px]  navbar bg-blue-600 shadow-sm ">
-        <div class="flex-1">
+        <div data-aos-duration="2000" data-aos="fade-right" class="flex-1">
             <a id="font" href="https://daisyui.com/" target="_blank" class="btn btn-ghost  text-xl">TODOS</a>
         </div>
         <div id="img" class="flex gap-2">
 
-            <button class="btn" id="dark" data-theme="dark"></button>
-            <button id="light" class="btn" data-theme="light"></button>
+            <button data-aos-duration="2000" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                data-aos-anchor-placement="bottom-center" class="btn" id="dark" data-theme="dark"></button>
+            <button id="light" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="bottom-center"
+                data-aos-easing="ease-out-cubic" class="btn" data-aos-duration="2000" data-theme="light"></button>
 
             <div class="dropdown dropdown-end">
                 <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-                    <div class="w-10 rounded-full">
+                    <div data-aos-duration="2000" data-aos-easing="ease-out-cubic" data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-center" class="w-10 rounded-full">
                         <img alt="Tailwind CSS Navbar component" src="./images/logo.jpg" />
                     </div>
                 </div>
@@ -107,19 +110,24 @@
     <!-- container -->
     <div class="max-w-5xl m-auto">
 
-        <div id="input" class=" h-auto  pt-5 pb-5 pl-5 pr-5  inset-shadow-sm inset-shadow-indigo-500/50 ">
+        <div id="input" class=" h-auto      pt-5 pb-5 pl-5 pr-5  inset-shadow-sm inset-shadow-indigo-500/50 ">
             <form id="form">
-                <input type="text" placeholder="Search" class="input    input-bordered w-[500px] ml-[200px] "
-                    minlength="5" maxlength="50" required />
+                <input data-aos-duration="2000" data-aos="flip-left" type="text" placeholder="Search"
+                    class="input    input-bordered w-[500px] ml-[200px] " minlength="5" maxlength="50" required />
             </form>
-            <ul id="todos" class="flex flex-col gap-[20px] ml-[200px] mt-[25px]  ">
+            <ul data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" id="todos"
+                class="flex flex-col gap-[20px] ml-[200px] mt-[25px]  ">
 
             </ul>
         </div>
     </div>
 
-    <script src="./js/apps.js"></script>
 
+    <script src="./js/apps.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
