@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>TODO</title>
+
+    <link rel="stylesheet" href="./css/output.css">
+
+    <style>
+        * {
+            font-family: serif;
+        }
+
+        #img button:nth-child(1) {
+            background-image: url(./images/dark_mode_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png);
+            background-repeat: no-repeat;
+            padding: 20px;
+            background-size: 25px;
+            background-position: center;
+        }
+
+        #img button:nth-child(2) {
+            background-image: url(/images/light_mode_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png);
+            background-repeat: no-repeat;
+            padding: 20px;
+            background-size: 25px;
+            background-position: center;
+        }
+
+        .btn {
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        li button {
+            border: solid 1px black;
+            border-radius: 5px;
+            padding: 2px 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        #nav {
+            background-attachment: fixed;
+            background-image: url(./images/s.png);
+            background-repeat: no-repeat;
+            background-size: 1999px 200px;
+        }
+
+        #font {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font: optional;
+            font-size: 100px;
+            font-weight: bold;
+        }
+
+        #input {
+            border-radius: 50px;
+            background-image: url(https://images.unsplash.com/photo-1637102838591-605a7d11daa3?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8TCVFMiU4MCU5OSVDMyVBOXZlaWwlMjBkZSUyMGxhJTIwbmF0dXJlfGVufDB8fDB8fHww);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div id="nav" class=" mb-10  h-[200px]  navbar bg-blue-600 shadow-sm ">
+        <div class="flex-1">
+            <a id="font" href="https://daisyui.com/" target="_blank" class="btn btn-ghost  text-xl">TODOS</a>
+        </div>
+        <div id="img" class="flex gap-2">
+
+            <button class="btn" id="dark" data-theme="dark"></button>
+            <button id="light" class="btn" data-theme="light"></button>
+
+            <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-10 rounded-full">
+                        <img alt="Tailwind CSS Navbar component" src="./images/logo.jpg" />
+                    </div>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li>
+                        <a class="justify-between">
+                            Profile
+                            <span class="badge">New</span>
+                        </a>
+                    </li>
+                    <li><a>Settings</a></li>
+                    <li><a>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- container -->
+    <div class="max-w-5xl m-auto">
+
+        <div id="input" class=" h-auto  pt-5 pb-5 pl-5 pr-5  inset-shadow-sm inset-shadow-indigo-500/50 ">
+            <form id="form">
+                <input type="text" placeholder="Search" class="input    input-bordered w-[500px] ml-[200px] "
+                    minlength="5" maxlength="50" required />
+            </form>
+            <ul id="todos" class="flex flex-col gap-[20px] ml-[200px] mt-[25px]  ">
+
+            </ul>
+        </div>
+    </div>
+
+    <script src="./js/apps.js"></script>
+
+</body>
+
+</html>
