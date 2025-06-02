@@ -12,7 +12,7 @@
     <title>TODO</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/output.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <style>
         * {
             font-family: serif;
@@ -37,6 +37,7 @@
         .btn {
             border-radius: 50%;
             cursor: pointer;
+            margin-right: 10px;
         }
 
         li button {
@@ -78,31 +79,37 @@
             <a id="font" href="https://daisyui.com/" target="_blank" class="btn btn-ghost  text-xl">TODOS</a>
         </div>
         <div id="img" class="flex gap-2">
+            <i class=" fa-beat">
+                <button data-aos-duration="2000" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                    data-aos-anchor-placement="bottom-center" class="btn" id="dark" data-theme="dark"></button>
 
-            <button data-aos-duration="2000" data-aos="fade-up" data-aos-easing="ease-out-cubic"
-                data-aos-anchor-placement="bottom-center" class="btn" id="dark" data-theme="dark"></button>
-            <button id="light" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="bottom-center"
-                data-aos-easing="ease-out-cubic" class="btn" data-aos-duration="2000" data-theme="light"></button>
 
-            <div class="dropdown dropdown-end">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-                    <div data-aos-duration="2000" data-aos-easing="ease-out-cubic" data-aos="fade-up"
-                        data-aos-anchor-placement="bottom-center" class="w-10 rounded-full">
-                        <img alt="Tailwind CSS Navbar component" src="./images/logo.jpg" />
+                <button id="light" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="bottom-center"
+                    data-aos-easing="ease-out-cubic" class="btn" data-aos-duration="2000" data-theme="light"></button>
+
+                <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                        <div data-aos-duration="2000" data-aos-easing="ease-out-cubic" data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-center" class="w-10 rounded-full">
+                            <i class="fa-beat">
+                                <img alt="Tailwind CSS Navbar component" src="./images/logo.jpg" />
+                            </i>
+                        </div>
                     </div>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                    <li>
-                        <a class="justify-between">
-                            Profile
-                            <span class="badge">New</span>
-                        </a>
-                    </li>
-                    <li><a>Settings</a></li>
-                    <li><a>Logout</a></li>
-                </ul>
-            </div>
+
+            </i>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                <li>
+                    <a class="justify-between">
+                        Profile
+                        <span class="badge">New</span>
+                    </a>
+                </li>
+                <li><a>Settings</a></li>
+                <li><a>Logout</a></li>
+            </ul>
         </div>
+    </div>
     </div>
 
 
