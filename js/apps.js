@@ -74,7 +74,12 @@ function deleteTodo(id) {
     const result = todos.filter((el) => el.id !== id)
     todos = result
     UIupdater(todos)
+    const sound = document.getElementById("audio")
+    sound.play()
 }
+
+
+
 
 // statusCHange
 function changeStatus(id) {
