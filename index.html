@@ -27,7 +27,7 @@
         }
 
         #img button:nth-child(2) {
-            background-image: url(/images/light_mode_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png);
+            background-image: url(./images/light_mode_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png);
             background-repeat: no-repeat;
             padding: 20px;
             background-size: 25px;
@@ -53,6 +53,7 @@
             background-image: url(./images/s.png);
             background-repeat: no-repeat;
             background-size: 1999px 200px;
+
         }
 
         #font {
@@ -74,50 +75,41 @@
 
 <body>
     <!-- navbar -->
-    <div id="nav" class=" mb-10  h-[200px]  navbar shadow-sm ">
-        <div data-aos-duration="2000" data-aos="fade-right" class="flex-1">
-            <a id="font" href="https://daisyui.com/" target="_blank" class="btn btn-ghost  text-xl">TODOS</a>
+    <div id="nav" class="navbar   h-[200px] shadow-sm">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-[100px]">TODO</a>
         </div>
         <div id="img" class="flex gap-2">
-            <i class=" fa-beat">
-                <button data-aos-duration="2000" data-aos="fade-up" data-aos-easing="ease-out-cubic"
-                    data-aos-anchor-placement="bottom-center" class="btn" id="dark" data-theme="dark"></button>
-                <button id="light" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="bottom-center"
-                    data-aos-easing="ease-out-cubic" class="btn" data-aos-duration="2000" data-theme="light"></button>
+            <button data-aos-duration="2000" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                data-aos-anchor-placement="bottom-center" class="btn" id="dark" data-theme="dark"></button>
+            <button id="light" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="bottom-center"
+                data-aos-easing="ease-out-cubic" class="btn" data-aos-duration="2000" data-theme="light"></button>
 
-                <button id="light" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="bottom-center"
-                    data-aos-easing="ease-out-cubic" class="btn" data-aos-duration="2000" data-theme="light"></button>
-
-                <div class="dropdown dropdown-end">
-                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-                        <div data-aos-duration="2000" data-aos-easing="ease-out-cubic" data-aos="fade-up"
-                            data-aos-anchor-placement="bottom-center" class="w-10 rounded-full">
-                            <i class="fa-beat">
-                                <img alt="Tailwind CSS Navbar component" src="./images/logo.jpg" />
-                            </i>
-                        </div>
+            <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-10 rounded-full">
+                        <img alt="Tailwind CSS Navbar component"
+                            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
                     </div>
                 </div>
-            </i>
-            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                <li>
-                    <a class="justify-between">
-                        Profile
-                        <span class="badge">New</span>
-                    </a>
-                </li>
-                <li><a>Settings</a></li>
-                <li><a>Logout</a></li>
-            </ul>
+                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li>
+                        <a class="justify-between">
+                            Profile
+                            <span class="badge">New</span>
+                        </a>
+                    </li>
+                    <li><a>Settings</a></li>
+                    <li><a>Logout</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-    </div>
     </div>
 
     <audio id="audio" src="./audio/sound.mp3"></audio>
 
     <!-- container -->
-    <div class="max-w-5xl m-auto">
+    <div class="max-w-5xl m-auto mt-[100px]  ">
 
         <div id="input" class=" h-auto      pt-5 pb-5 pl-5 pr-5  inset-shadow-sm inset-shadow-indigo-500/50 ">
             <form id="form">
